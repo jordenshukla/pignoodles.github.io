@@ -3,19 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <h1>JORDEN WAS HERE</h1>
-    <link type="text/css" rel="stylesheet" href="styling.css">
-    <link rel="icon" type="image/x-icon"  href="Good-Smile-Company-Nendoroid-1281-Kirby-Waddle-Dee-Figure-Japan-Figure-4580590120242-0.jpg">
-</head>
-<body>
-    Hey, this website is under construction. Check back later! <br>
+    <title>Jorden's Site</title>
+    <link rel="icon" type="image/x-icon" href="Good-Smile-Company-Nendoroid-1281-Kirby-Waddle-Dee-Figure-Japan-Figure-4580590120242-0.jpg">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <a href="https://www.youtube.com/@jordenshukla6873" target="_blank"> My Channel</a>
-    <a href="https://www.linkedin.com/in/jorden-shukla-594246295/" target="_blank"> LinkedIn</a>
-    <a href="https://pignoodles.itch.io/" target="_blank"> Itch.io</a>
+    <style>
+    body {
+        background: black;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+
+        /* your star texture */
+        background-image: url("images/c0740e26375be8fb60637df998460140.jpg");
+        background-repeat: repeat;
+        background-size: auto;
+
+        opacity: 0.5;
+        animation: starScroll 60s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes starScroll {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -1024px;
+        }
+    }
+</style>
+
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 text-slate-100">
+
+    <div class="w-full max-w-4xl bg-slate-900/90 border border-slate-700 shadow-[0_0_40px_rgba(0,0,0,0.8)] rounded-lg overflow-hidden">
+       
+        <header class="bg-[#20e0ff] border-b border-[#0aa8c2] px-4 py-3 flex items-center justify-between text-sm text-black font-bold shadow-[0_0_12px_#20e0ff]">
+
+
+
+
+            <div class="flex items-center gap-2">
+                <span class="text-xs tracking-widest uppercase bg-white text-blue-700 font-black px-2 py-0.5 rounded-sm">
+                    Welcome
+                </span>
+                <span class="text-slate-100 font-semibold">
+                    jorden's profile
+                </span>
+            </div>
+            <nav class="flex gap-4 text-xs">
+                <span class="hover:underline cursor-pointer">Home</span>
+                <span class="hover:underline cursor-pointer">Projects</span>
+                <span class="hover:underline cursor-pointer">Message</span>
+            </nav>
+        </header>
+
+        <div class="grid md:grid-cols-[260px,1fr] gap-0 md:gap-4">
+            <!-- Left column: profile card -->
+            <aside class="border-b md:border-b-0 md:border-r border-slate-800 bg-slate-900/80 p-4">
+                <h1 class="text-xl font-bold tracking-wide mb-2">
+                    JORDEN WAS HERE
+                </h1>
+                <p class="text-xs text-slate-400 mb-4 uppercase tracking-[0.15em]">
+                    "WIP"
+                </p>
+
+                <div class="mb-4 flex items-center justify-center">
+                    <div class="w-32 h-32 rounded-md bg-slate-800 border border-slate-600 flex items-center justify-center text-3xl font-black tracking-widest">
+                        JS
+                    </div>
+                </div>
+
+                <div class="text-xs space-y-1">
+                    <p><span class="font-semibold text-slate-200">Status:</span> wanting to build cool stuff</p>
+                    <p><span class="font-semibold text-slate-200">Located in:</span> Vancouver area</p>
+                    <p><span class="font-semibold text-slate-200">Currently:</span> in school</p>
+                    <p><span class="font-semibold text-slate-200">Discord:</span>  pignoodles.</p>
+                </div>
+            </aside>
+
+            <!-- Right column: about + links -->
+            <main class="bg-slate-950/80 p-4 md:p-6 space-y-6">
+                <!-- About section -->
+                <section class="border border-slate-800 bg-slate-900/80 rounded-md">
+                    <div class="border-b border-slate-800 bg-slate-800/70 px-3 py-2 text-sm font-semibold">
+                        About Me
+                    </div>
+                    <div class="p-3 text-sm leading-relaxed">
+                        <p>
+                            Hey, I'm Jorden. This site is still under construction, but you can already find me on a few other places.
+                     
+                        </p>
+                        <p class="mt-3 text-xs text-slate-400">
+                            placeholder
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Links section -->
+                <section class="border border-slate-800 bg-slate-900/80 rounded-md">
+                    <div class="border-b border-slate-800 bg-slate-800/70 px-3 py-2 text-sm font-semibold flex items-center gap-2">
+                        <span>My Links</span>
+                        <span class="text-[0.65rem] uppercase tracking-[0.2em] text-slate-300">
+                            Find me
+                        </span>
+                    </div>
+
+                    <div class="p-4 grid sm:grid-cols-2 gap-3">
+                        <!-- GitHub -->
+                        <a href="https://github.com/jordenshukla"
+                           target="_blank"
+                           class="group border border-slate-700 rounded-md px-3 py-2 flex items-center justify-between bg-slate-950/60 hover:bg-slate-800/80 transition">
+                            <div>
+                                <p class="text-sm font-semibold">GitHub</p>
+                                <p class="text-xs text-slate-400">Projects, experiments, and code</p>
+                            </div>
+                            <span class="flex items-center text-lg opacity-70 group-hover:opacity-100">
+                                <img src="images/github.svg"  class="w-6 h-6">
+                            </span>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/jorden-shukla-594246295/"
+                           target="_blank"
+                           class="group border border-slate-700 rounded-md px-3 py-2 flex items-center justify-between bg-slate-950/60 hover:bg-slate-800/80 transition">
+                            <div>
+                                <p class="text-sm font-semibold">LinkedIn</p>
+                                <p class="text-xs text-slate-400">Professional side of things</p>
+                            </div>
+                            <span class="text-lg opacity-70 group-hover:opacity-100">
+                                <img src="images/linkedin.svg"  class="w-6 h-6">
+                            </span>
+                        </a>
+
+                        <!-- Itch.io -->
+                        <a href="https://pignoodles.itch.io/"
+                           target="_blank"
+                           class="group border border-slate-700 rounded-md px-3 py-2 flex items-center justify-between bg-slate-950/60 hover:bg-slate-800/80 transition">
+                            <div>
+                                <p class="text-sm font-semibold">Itch.io</p>
+                                <p class="text-xs text-slate-400">Games and prototypes</p>
+                            </div>
+                            <span class="text-lg opacity-70 group-hover:opacity-100">
+                                <img src="images/itch_io.svg"  class="w-6 h-6">
+                            </span>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@jordenshukla6873"
+                           target="_blank"
+                           class="group border border-slate-700 rounded-md px-3 py-2 flex items-center justify-between bg-slate-950/60 hover:bg-slate-800/80 transition">
+                            <div>
+                                <p class="text-sm font-semibold">YouTube</p>
+                                <p class="text-xs text-slate-400">Devlogs and random content</p>
+                            </div>
+                            <span class="text-lg opacity-70 group-hover:opacity-100">
+                                <img src="images/youtube.svg"  class="w-6 h-6">
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Footer note -->
+                <section class="text-[0.7rem] text-slate-500 text-center">
+                    <p>© 2025 Jorden Shukla · This profile is always under construction.</p>
+                </section>
+            </main>
+        </div>
+    </div>
+
 </body>
-<footer>
-   
-</footer>
 </html>

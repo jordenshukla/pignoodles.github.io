@@ -1,9 +1,64 @@
-body{
-    background-color: lightgray;
+/* Apply a clean modern font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
 }
 
-h1{
-    font-size: 200%;
-    color: cadetblue;
-    font-family: cursive;
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #4e8cff, #7aa7ff);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Links section */
+.links-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.links-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    background: #4e8cff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.links a:hover {
+    background: #2a6be3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
 }
